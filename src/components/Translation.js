@@ -53,7 +53,7 @@ const TranslationCard = (props) => {
 			<Card.Body>
 				<Card.Title>{props.title || 'Title'}</Card.Title>
 				<Card.Text>{props.desc || 'Description'}</Card.Text>
-				<a href={props.link || '#'} target='_blank'>
+				<a href={props.link || '#'} target='_blank' rel='noopener noreferrer'>
 					<Button variant='primary'>{props.btn || 'Button'}</Button>
 				</a>
 			</Card.Body>

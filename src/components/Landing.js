@@ -12,7 +12,7 @@ const Landing = () => {
 	return (
 		<React.Fragment>
 			<Jumbotron className='text-center'>
-				<img className='img-fluid' src={require('../style/img/PatrickAuriName.png')} />
+				<img alt='name' className='img-fluid' src={require('../style/img/PatrickAuriName.png')} />
 				<br />
 				<i className='text-white py-2'>Composer - Voice Actor - Polyglot - Programmer</i>
 				<hr className='my-5' />

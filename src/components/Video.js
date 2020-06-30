@@ -4,6 +4,7 @@ const Vimeo = (props) => {
 	return (
 		<React.Fragment>
 			<iframe
+				title={props.title}
 				src={props.src}
 				width='100%'
 				height='360'

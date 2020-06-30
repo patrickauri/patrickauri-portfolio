@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Jumbotron, Button, Card } from 'react-bootstrap';
+import { Row, Col, Jumbotron, Button, Card } from 'react-bootstrap';
 
 const Software = () => {
 	return (
@@ -49,7 +49,7 @@ const SoftwareCard = (props) => {
 			<Card.Body>
 				<Card.Title>{props.title || 'Title'}</Card.Title>
 				<Card.Text>{props.desc || 'Description'}</Card.Text>
-				<a href={props.link || '#'} target='_blank'>
+				<a href={props.link || '#'} target='_blank' rel='noopener noreferrer'>
 					<Button variant='primary'>{props.btn || 'Button'}</Button>
 				</a>
 			</Card.Body>

@@ -1,14 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, NavDropdown, Form, FormControl, Button, Nav, NavItem } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
+import { Navbar, Button, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-{
-	/* <Link to='/blog/' className='nav-link'>
+/* <Link to='/blog/' className='nav-link'>
 	Blog
 </Link> */
-}
 
 const Navigation = () => {
 	return (
