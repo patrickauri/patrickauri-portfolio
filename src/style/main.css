@@ -1,0 +1,29 @@
+body {
+	background-image: url("img/IconPattern2.png");
+	background-size: 8em;
+	background-color: rgb(25, 26, 34);
+}
+
+.bg-purple {
+	background-color: rgb(62, 60, 75) !important;
+}
+
+.jumbotron {
+	background: none;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	margin: 2px;
+	border-radius: 50%;
+	color: gainsboro;
+}
+
+.fa:hover {
+	color: white;
+}
+
+.card-software {
+	max-width: 32em;
+}
