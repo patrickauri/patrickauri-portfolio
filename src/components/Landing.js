@@ -2,13 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Jumbotron, Button } from 'react-bootstrap';
 
-{
-	/* <Link to='/blog/'>
+/* <Link to='/blog/'>
 	<Button className='mx-1' size='lg' variant='success'>
 		See Blog
 	</Button>
 </Link> */
-}
 
 const Landing = () => {
 	return (
