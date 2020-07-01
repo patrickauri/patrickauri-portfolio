@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Row, Col, Jumbotron, Button } from 'react-bootstrap';
+import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 
 /* <Link to='/blog/'>
 	<Button className='mx-1' size='lg' variant='success'>
@@ -11,34 +11,24 @@ import { Container, Row, Col, Jumbotron, Button } from 'react-bootstrap';
 const Landing = () => {
 	return (
 		<React.Fragment>
-			<Jumbotron className='text-center'>
-				<img alt='name' className='img-fluid' src={require('../style/img/PatrickAuriName.png')} />
-				<br />
-				<i className='text-white py-2'>Composer - Voice Actor - Polyglot - Programmer</i>
-				<hr className='my-5' />
-				<Container>
-					<Row className='my-1'>
-						<Col>
-							<Link to='/contact/'>
-								<Button className='mx-1' size='lg' variant='primary'>
-									Contact
-								</Button>
-							</Link>
-						</Col>
-					</Row>
-					<Row className='my-5'>
-						<Col>
-							<div
-								className='g-ytsubscribe'
-								data-channelid='UCRqk7Lv6elxXBnrJWKHn8xw'
-								data-layout='full'
-								data-theme='dark'
-								data-count='hidden'
-							/>
-						</Col>
-					</Row>
-				</Container>
-			</Jumbotron>
+			<Container className='text-center my-5'>
+				<Row className='my-2'>
+					<Col md>
+						<Image width='350px' src={require('../style/img/pato.jpeg')} roundedCircle />
+					</Col>
+					<Col md className='my-auto'>
+						<img alt='name' className='img-fluid' src={require('../style/img/PatrickAuriName.png')} />
+						<div className='my-3' />
+						<i className='text-white py-2'>Programmer - Composer - Voice Actor - Polyglot</i>
+						<div className='my-3' />
+						<Link to='/contact/'>
+							<Button className='mx-1' size='lg' variant='primary'>
+								Contact
+							</Button>
+						</Link>
+					</Col>
+				</Row>
+			</Container>
 		</React.Fragment>
 	);
 };
