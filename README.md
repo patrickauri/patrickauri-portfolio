@@ -1,1 +1,1 @@
-Patrick Auri Portfolio & Blog Website
+Personal Portfolio & Contact Website
