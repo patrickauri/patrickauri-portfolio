@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Jumbotron, Button, Card } from 'react-bootstrap';
+import { Row, Col, Jumbotron, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Music = () => {
@@ -38,7 +38,15 @@ const SoundCloud = (props) => {
 		'&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true';
 	return (
 		<React.Fragment>
-			<iframe width='100%' height='300' scrolling='no' frameborder='no' allow='autoplay' src={src}></iframe>
+			<iframe
+				title={props.title}
+				width='100%'
+				height='300'
+				scrolling='no'
+				frameborder='no'
+				allow='autoplay'
+				src={src}
+			></iframe>
 		</React.Fragment>
 	);
 };
