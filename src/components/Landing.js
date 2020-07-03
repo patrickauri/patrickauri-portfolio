@@ -2,12 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Image, Button } from 'react-bootstrap';
 
-/* <Link to='/blog/'>
-	<Button className='mx-1' size='lg' variant='success'>
-		See Blog
-	</Button>
-</Link> */
-
 const Landing = () => {
 	return (
 		<React.Fragment>
