@@ -35,7 +35,9 @@ const Titles = () => {
 		backgroundColor: 'rgb(35,35,35)',
 		padding: '0.5em',
 		whiteSpace: 'normal',
-		wordBreak: 'break-all'
+		wordBreak: 'break-all',
+		borderBottomLeftRadius: '0.5em',
+		borderBottomRightRadius: '0.5em'
 	};
 	const funcStyle = {
 		color: 'rgb(190, 80, 190)',
@@ -47,23 +49,53 @@ const Titles = () => {
 	const nameStyle = {
 		color: 'rgb(130, 170, 255)'
 	};
+	const hiddenStyle = {
+		color: 'rgba(0,0,0,0)'
+	};
+
+	const spacingStyle = {
+		width: '2em',
+		height: '100%'
+	};
+	const containerStyle = {
+		display: 'flex'
+	};
+	const topStyle = {
+		backgroundColor: 'rgb(200,200,200)',
+		height: '2em',
+		borderTopLeftRadius: '0.5em',
+		borderTopRightRadius: '0.5em'
+	};
+
 	const bOpen = '{\n';
-	const tab = '';
+	const tab = <span style={hiddenStyle}>XXXX</span>;
 	const bClose = '\n}';
 
 	return (
-		<div style={titleStyle}>
-			<span style={funcStyle}>const </span> <span style={nameStyle}>me</span> = {bOpen}
-			<br />
-			{tab}name: <span style={objStyle}>'Patrick Auri'</span>,
-			<br />
-			{tab}country: <span style={objStyle}>'Norway'</span>,
-			<br />
-			{tab}titles: [ <span style={objStyle}>'programmer'</span>, <span style={objStyle}>'language teacher'</span>,{' '}
-			<span style={objStyle}>'translator'</span>, <span style={objStyle}>'composer'</span> ]
-			{bClose};
-			<br />
-			<span style={funcStyle}>return</span> <span style={nameStyle}>me</span>;
+		<div id='console'>
+			<div id='console-top' style={topStyle}>
+				me.js - bash - 80x10
+			</div>
+			<div id='console-text' style={titleStyle}>
+				<span style={funcStyle}>const </span> <span style={nameStyle}>me</span> = {bOpen}
+				<br />
+				<div id='code-container' style={containerStyle}>
+					<div style={spacingStyle} id='code-spacing' />
+					<div id='code'>
+						name: <span style={objStyle}>'Patrick Auri'</span>,
+						<br />
+						country: <span style={objStyle}>'Norway'</span>,
+						<br />
+						titles: [ <span style={objStyle}>'programmer'</span>,<br />
+						<span style={objStyle}>'language teacher'</span>,<br />{' '}
+						<span style={objStyle}>'translator'</span>,<br />
+						<span style={objStyle}>'composer'</span> ]
+					</div>
+				</div>
+				{bClose};
+				<br />
+				<span style={funcStyle}>return</span> <span style={nameStyle}>me</span>;
+			</div>
 		</div>
 	);
 };
